@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Create Your Mad Lib Story</h1>
+    <form action="/ITC505/lab-7/submit" method="POST">
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective" required><br>
+
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required><br>
+
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb" required><br>
+
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb" required><br>
+
+        <label for="pluralNoun">Plural Noun:</label>
+        <input type="text" id="pluralNoun" name="pluralNoun" required><br>
+
+        <button type="submit">Create Story</button>
+    </form>
+    <div class="Addendum">
+        <p><center><strong>UPDATE:</strong></center></p>
+        <p><strong>HTML Layout:</strong></p>
+        <ol>1. The structure features a form with fields for various types of words (nouns, verbs, adjectives).</ol>
+        <ol>2. Each input field is clearly labeled for ease of use.</ol>
+        <ol>3. There is a button to submit the form and generate the mad lib.</ol>
+    
+        <p><strong>CSS Design:</strong></p>
+        <ol>1. CSS is applied to improve the visual design of the form.</ol>
+        <ol>2. The form is aligned to the center of the page and styled with adequate spacing, borders, and colors.</ol>
+        <ol>3. The input fields are designed with consistent styling to enhance the user interface.</ol>
+        <ol>4. The submit button is given a contrasting color to make it easy to identify.</ol>
+    
+        <p><strong>JavaScript Implementation:</strong></p>
+        <ol>1. JavaScript is used to manage form submission and dynamically create the mad lib.</ol>
+        <ol>2. An event listener is attached to the form to intercept the submission event.</ol>
+        <ol>3. The default form submission behavior is prevented to handle it via JavaScript.</ol>
+        <ol>4. Form data is accessed using the FormData API, which simplifies the retrieval of user inputs.</ol>
+        <ol>5. The form data is used to build a mad lib sentence with string interpolation.</ol>
+        <ol>6. The generated mad lib is displayed dynamically on the page after submission.</ol>
+    
+        <p><strong>General Approach:</strong></p>
+        <ol>1. The solution adopts a clean and modular approach by separating HTML, CSS, and JavaScript into distinct files for better organization and maintenance.</ol>
+        <ol>2. Semantic HTML elements are used to improve accessibility and search engine optimization (SEO).</ol>
+        <ol>3. CSS is utilized to enhance the form's visual appeal and provide a consistent, responsive experience.</ol>
+        <ol>4. JavaScript enhances the form’s interactivity by allowing real-time updates without needing to reload the page.</ol>
+        <ol>5. <strong>FormData API:</strong> This API simplifies the process of collecting form data, making it easy to access user inputs.</ol>
+        <ol>6. <strong>String Interpolation:</strong> By using template literals with `${}`, the mad lib sentence is constructed more efficiently and clearly.</ol>
+        <ol>7. <strong>Event-Driven Design:</strong> The use of event listeners to handle form submission ensures that the content is updated smoothly without reloading the page.</ol>
+    
+        <ol>In summary, the goal of this implementation is to provide an interactive, user-friendly mad lib form with clear separation of concerns in HTML, CSS, and JavaScript for better maintainability and user experience.</ol>
+    </div>
+    
+    <strong><p><center>Last Updated: 
+        <span id="lastModified"></span></center>
+    </p></strong>
+    </footer>
+    
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
